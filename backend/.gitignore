@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Debugger and editor files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: If you store uploads (like images or files)
+uploads/
+
+# Optional: If you use PM2 for process management, ignore its logs
+pmd2/
+
+# Optional: If you use any build tools that generate output (like Babel)
+dist/
+build/
