@@ -10,9 +10,9 @@ function Footer() {
 
           {/* Logo and Description */}
           <div>
-          <h1 className='font-bold text-2xl text-left font-serif text-[#1E1E1E] mb-2' style={{textShadow: '3px 3px 6px rgba(0, 0, 0, 0.2)'}}>
-  Xanadu Resort
-</h1>
+            <h1 className='font-bold text-2xl text-left font-serif text-[#1E1E1E] mb-2' style={{ textShadow: '3px 3px 6px rgba(0, 0, 0, 0.2)' }}>
+              Xanadu Resort
+            </h1>
 
             <p className='text-[#1E1E1E] w-1/2 text-left font-serif'>
               Sanctuary of Luxury and comfort awaits your arrival.
