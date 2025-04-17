@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +13,14 @@ function Navbar() {
           Xanadu Resort
         </div>
 
-        {/* Right side - Links */}  
+        {/* Right side - Links */}
         <div className="hidden md:flex space-x-6 text-white font-serif">
-          <a href="#home" className="hover:text-green-400">Home</a>
-          <a href="#ourhotel" className="hover:text-green-400">Our Hotel</a>
-          <a href="#lodging" className="hover:text-green-400">Lodging</a>
-          <a href="#Restaurant" className="hover:text-green-400">Our Restaurant</a>
-          <a href="#Booking" className="hover:text-green-400">Booking</a>
-          <a href="#contact" className="hover:text-green-400">Contact</a>
+        <Link to="/" className="block hover:text-green-400">Home</Link>
+          <Link to="/ourhotel" className="block hover:text-green-400">Our Hotel</Link>
+          <Link to="/lodging" className="block hover:text-green-400">Lodging</Link>
+          <Link to="/restaurant" className="block hover:text-green-400">Our Restaurant</Link>
+          <Link to="/booking" className="block hover:text-green-400">Booking</Link>
+          <Link to="/contact" className="block hover:text-green-400">Contact</Link>
         </div>
 
         {/* Mobile menu button */}
@@ -45,12 +46,12 @@ function Navbar() {
 
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-black bg-opacity-5 text-white font-serif">
-          <a href="#home" className="block hover:text-green-400">Home</a>
-          <a href="#ourhotel" className="block hover:text-green-400">Our Hotel</a>
-          <a href="#lodging" className="block hover:text-green-400">Lodging</a>
-          <a href="#Restaurant" className="block hover:text-green-400">Our Restaurant</a>
-          <a href="#Booking" className="block hover:text-green-400">Booking</a>
-          <a href="#contact" className="block hover:text-green-400">Contact</a>
+          <Link to="/" className="block hover:text-green-400">Home</Link>
+          <Link to="/ourhotel" className="block hover:text-green-400">Our Hotel</Link>
+          <Link to="/lodging" className="block hover:text-green-400">Lodging</Link>
+          <Link to="/restaurant" className="block hover:text-green-400">Our Restaurant</Link>
+          <Link to="/booking" className="block hover:text-green-400">Booking</Link>
+          <Link to="/contact" className="block hover:text-green-400">Contact</Link>
         </div>
       )}
     </nav>
