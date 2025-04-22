@@ -19,9 +19,9 @@ function Navbar() {
             <div className="hidden md:flex space-x-6 text-white font-serif">
 
               <Link to="/" className="block hover:text-green-400">Home</Link>
-              <Link to="/ourhotel" className="block hover:text-green-400">Our Hotel</Link>
+              <Link to="/our-resort" className="block hover:text-green-400">Our Hotel</Link>
               <Link to="/lodging" className="block hover:text-green-400">Lodging</Link>
-              <Link to="/restaurant" className="block hover:text-green-400">Our Restaurant</Link>
+              <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
 
@@ -51,9 +51,9 @@ function Navbar() {
           {isOpen && (
             <div className="md:hidden px-4 pb-4 space-y-2 bg-black bg-opacity-5 text-white font-serif">
               <Link to="/" className="block hover:text-green-400">Home</Link>
-              <Link to="/ourhotel" className="block hover:text-green-400">Our Hotel</Link>
+              <Link to="/our-resort" className="block hover:text-green-400">Our Hotel</Link>
               <Link to="/lodging" className="block hover:text-green-400">Lodging</Link>
-              <Link to="/restaurant" className="block hover:text-green-400">Our Restaurant</Link>
+              <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
             </div>
