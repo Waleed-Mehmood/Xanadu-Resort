@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const adminRoute = require('./routes/adminRoute');
 const userRoutes = require('./routes/userRoutes');
+const authRoutes = require('./routes/authRoutes');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
@@ -27,6 +28,7 @@ mongoose.connect(MongoUri).then(() => {
 //Routes
 app.use('/admin', adminRoute);
 app.use('/user', userRoutes);
+app.use('/auth', authRoutes);
 app.get('/', (req, res) => {
   res.send('Hello from Node.js!');
 });
