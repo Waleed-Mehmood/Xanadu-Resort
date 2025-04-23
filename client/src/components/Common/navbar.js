@@ -24,6 +24,8 @@ function Navbar() {
               <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
+              <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
+              <Link to="/login" className="block hover:text-green-400">Login</Link>
 
             </div>
 
@@ -56,6 +58,8 @@ function Navbar() {
               <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
+              <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
+              <Link to="/login" className="block hover:text-green-400">Login</Link>
             </div>
           )}
         </nav>

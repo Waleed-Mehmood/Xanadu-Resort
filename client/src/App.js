@@ -10,6 +10,8 @@ import StudentRoom from './pages/StudentRoom';
 import AdminDashboard from './pages/admindashboard/AdminDashboard';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/admindashboard" element={<AdminDashboard />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/booking' element={<Booking />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </div>
   );
