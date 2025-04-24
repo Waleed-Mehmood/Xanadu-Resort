@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link,useNavigate } from 'react-router-dom';
+import { logout } from '../../redux/features/authSlice';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navigate = useNavigate(); 
+
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate('/'); // Redirect user to login page after logout
+  };
 
   return (
     <div className='relative'>
@@ -24,8 +34,17 @@ function Navbar() {
               <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
-              <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
-              <Link to="/login" className="block hover:text-green-400">Login</Link>
+              {!localStorage.getItem('user') ? (
+                  <>
+                  <Link to="/login" className="block hover:text-green-400">Login</Link>
+                  <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
+                
+                </>
+                ) :
+                (
+                  <button to="/" className="block rounded hover:bg-red-400" onClick={handleLogout}>Logout</button>
+                )
+              }
 
             </div>
 
@@ -58,8 +77,18 @@ function Navbar() {
               <Link to="/our-restaurent" className="block hover:text-green-400">Our Restaurant</Link>
               <Link to="/booking" className="block hover:text-green-400">Booking</Link>
               <Link to="/contact" className="block hover:text-green-400">Contact</Link>
-              <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
-              <Link to="/login" className="block hover:text-green-400">Login</Link>
+              {!localStorage.getItem('user') ? (
+                  <>
+                  <Link to="/login" className="block hover:text-green-400">Login</Link>
+                  <Link to="/signup" className="block hover:text-green-400">SignUp</Link>
+                
+                </>
+                ) :
+                (
+                  <button to="/" className="block bg-red-400 hover:bg-red-400" onClick={handleLogout}>Logout</button>
+                )
+              }
+              
             </div>
           )}
         </nav>

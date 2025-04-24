@@ -22,7 +22,8 @@ export const loginUser = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const res = await axios.post(`${API_URL}/login`, formData);
-      return res.data.user;
+      console.log(res.data);
+      return res.data;
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || 'Login failed');
     }
@@ -36,12 +37,14 @@ const authSlice = createSlice({
     isAuthenticated: false,
     loading: false,
     error: null,
+    signupSuccess: false,
   },
   reducers: {
     logout: (state) => {
       state.user = null;
       state.isAuthenticated = false;
       state.error = null;
+      localStorage.removeItem('user');
     },
   },
   extraReducers: (builder) => {
@@ -54,7 +57,7 @@ const authSlice = createSlice({
       .addCase(signupUser.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload;
-        state.isAuthenticated = true;
+        state.signupSuccess = true;
       })
       .addCase(signupUser.rejected, (state, action) => {
         state.loading = false;
@@ -69,6 +72,7 @@ const authSlice = createSlice({
         state.loading = false;
         state.user = action.payload;
         state.isAuthenticated = true;
+        localStorage.setItem('user', JSON.stringify(action.payload));
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;

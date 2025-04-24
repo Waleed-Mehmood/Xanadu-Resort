@@ -10,8 +10,9 @@ import StudentRoom from './pages/StudentRoom';
 import AdminDashboard from './pages/admindashboard/AdminDashboard';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Login from './pages/Auth/Login';
+import Signup from './pages/Auth/Signup';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
+         <ToastContainer position="top-right" autoClose={1000} />
     </div>
   );
 }
