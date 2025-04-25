@@ -1,18 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Lodging from './pages/Lodging';
-import Resort from './pages/Resort';
-import OurRestaurent from './pages/OurRestaurent';
-import HeritageHut from './pages/HeritageHut';
-import Camp from './pages/Camp';
-import StudentRoom from './pages/StudentRoom';
+import Lodging from './pages/navLinksPages/Lodging';
+import Resort from './pages/navLinksPages/Resort';
+import OurRestaurent from './pages/navLinksPages/OurRestaurent';
+import HeritageHut from './pages/navLinksPages/HeritageHut';
+import Camp from './pages//navLinksPages/Camp';
+import StudentRoom from './pages/navLinksPages/StudentRoom';
 import AdminDashboard from './pages/admindashboard/AdminDashboard';
-import Contact from './pages/Contact';
-import Booking from './pages/Booking';
+import Contact from './pages/navLinksPages/Contact';
+import Booking from './pages/navLinksPages/Booking';
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
 import { ToastContainer } from 'react-toastify';
+import AdminSignup from './pages/Auth/AdminSignup';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/booking' element={<Booking />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/signup/admin' element={<AdminSignup />} />
       </Routes>
          <ToastContainer position="top-right" autoClose={1000} />
     </div>

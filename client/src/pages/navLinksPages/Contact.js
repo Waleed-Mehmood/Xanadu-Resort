@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Common/navbar';
-import bkgtop from '../assets/contactbg.png';
+import Navbar from '../../components/Common/navbar';
+import bkgtop from '../../assets/contactbg.png';
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
 
 function Contact() {
     const [expanded, setExpanded] = useState(0);

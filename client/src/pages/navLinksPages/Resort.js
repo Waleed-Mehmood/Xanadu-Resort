@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Common/navbar";
-import resort from "../assets/resort.png";
-import resort2 from "../assets/resort2.png";
-import resort3 from "../assets/resort3.png";
-import vision1 from "../assets/ourvision1.png";
-import vision2 from "../assets/ourvision2.png";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Common/navbar";
+import resort from "../../assets/resort.png";
+import resort2 from "../../assets/resort2.png";
+import resort3 from "../../assets/resort3.png";
+import vision1 from "../../assets/ourvision1.png";
+import vision2 from "../../assets/ourvision2.png";
+import Footer from "../../components/Footer";
 
 const Resort = () => {
   return (

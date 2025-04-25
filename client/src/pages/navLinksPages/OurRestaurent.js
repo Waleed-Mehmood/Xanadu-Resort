@@ -1,7 +1,7 @@
 import React from "react";
-import Menu from "../assets/menu.png";
-import Navbar from "../components/Common/navbar";
-import Footer from "../components/Footer";
+import Menu from "../../assets/menu.png";
+import Navbar from "../../components/Common/navbar";
+import Footer from "../../components/Footer";
 
 const OurRestaurent = () => {
   const menuData = {

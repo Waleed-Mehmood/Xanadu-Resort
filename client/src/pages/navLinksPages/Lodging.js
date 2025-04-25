@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Common/navbar'
-import bkgtop from '../assets/bkg1.png'
-import heritagehut from '../assets/heritagehut.png'
-import camps from '../assets/camps.png'
-import Rightimg from '../assets/imgleft1.png'
-import studentimg from '../assets/imgright1.png'
-import Footer from '../components/Footer'
+import Navbar from '../../components/Common/navbar'
+import bkgtop from '../../assets/bkg1.png'
+import heritagehut from '../../assets/heritagehut.png'
+import camps from '../../assets/camps.png'
+import Rightimg from '../../assets/imgleft1.png'
+import studentimg from '../../assets/imgright1.png'
+import Footer from '../../components/Footer'
 
 
 function Lodging() {

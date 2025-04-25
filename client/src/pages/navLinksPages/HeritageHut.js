@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import resort from "../assets/resort.png";
-import heritageHut from "../assets/heritagehut.png";
-import Navbar from "../components/Common/navbar";
-import { Minus, Plus } from "lucide-react";
-import Footer from "../components/Footer";
+import resort from "../../assets/resort.png";
+import heritageHut from "../../assets/heritagehut.png";
+import Navbar from "../../components/Common/navbar";
+import Footer from "../../components/Footer";
 import { BsCheck } from "react-icons/bs";
 
 const HeritageHut = () => {
@@ -119,7 +118,7 @@ const HeritageHut = () => {
             </div>
           </div>
 
-          <button className="w-full lg:w-[150px] bg-[#d0e4ff] text-black py-2 rounded hover:bg-[#bdd9ff] transition text-sm rounded-lg">
+          <button className="w-full lg:w-[150px] bg-[#d0e4ff] text-black py-2  hover:bg-[#bdd9ff] transition text-sm rounded-lg">
             Book Room
           </button>
         </div>

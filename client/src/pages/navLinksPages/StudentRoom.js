@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import resort from "../assets/resort.png";
-import camps1 from "../assets/camps1.png";
-import camps2 from "../assets/camps2.png";
-import Navbar from "../components/Common/navbar";
-import { Minus, Plus } from "lucide-react";
-import Footer from "../components/Footer";
+import studentroom1 from "../../assets/studentroom1.png";
+import studentroom2 from "../../assets/studentroom2.png";
+import Navbar from "../../components/Common/navbar";
+import Footer from "../../components/Footer";
 import { BsCheck } from "react-icons/bs";
 
-const Camp = () => {
+const StudentRoom = () => {
   // const [roomCount, setRoomCount] = useState(2);
   const [count, setCount] = useState(2);
 
@@ -19,11 +17,11 @@ const Camp = () => {
 
       <div
         className="relative h-[200px] md:h-[400px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${camps1})` }}
+        style={{ backgroundImage: `url(${studentroom1})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="absolute bottom-10 w-full text-center text-white z-10">
-          <h2 className="text-4xl md:text-5xl font-serif">Camps</h2>
+          <h2 className="text-4xl md:text-5xl font-serif">Student Room</h2>
         </div>
       </div>
 
@@ -31,7 +29,7 @@ const Camp = () => {
         {/* Left: Image and Icons */}
         <div className="lg:w-1/3 w-full relative">
           <img
-            src={camps2}
+            src={studentroom2}
             alt="Heritage Hut"
             className="h-64 lg:h-full w-full object-cover rounded-xl"
           />
@@ -55,7 +53,7 @@ const Camp = () => {
 
         {/* Middle: Description */}
         <div className="lg:w-1/3 w-full p-2 space-y-3">
-          <h2 className="text-xl font-semibold text-start">Camps</h2>
+          <h2 className="text-xl font-semibold text-start">Student Room</h2>
           <p className="text-sm text-gray-600 text-start leading-relaxed">
             Our spacious suites embody luxury and sophistication and enjoy the
             experience wit…{" "}
@@ -82,7 +80,7 @@ const Camp = () => {
         {/* Right: Price & Booking */}
         <div className="lg:w-1/3 w-full p-2 flex flex-col justify-between items-start">
           <div className="text-start">
-          <div
+            <div
               className="bg-blue-600 text-white px-4 py-1 font-bold text-sm inline-block"
               style={{
                 clipPath: "polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)",
@@ -120,7 +118,7 @@ const Camp = () => {
             </div>
           </div>
 
-          <button className="w-full lg:w-[150px] bg-[#d0e4ff] text-black py-2 rounded hover:bg-[#bdd9ff] transition text-sm rounded-lg">
+          <button className="w-full lg:w-[150px] bg-[#d0e4ff] text-black py-2  hover:bg-[#bdd9ff] transition text-sm rounded-lg">
             Book Room
           </button>
         </div>
@@ -131,4 +129,4 @@ const Camp = () => {
   );
 };
 
-export default Camp;
+export default StudentRoom;
