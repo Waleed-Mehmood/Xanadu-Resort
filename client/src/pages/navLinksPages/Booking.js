@@ -5,6 +5,8 @@ import Footer from '../../components/Footer'
 import BookingPage from '../../components/Booking/BookingPage'
 import BookingBar from '../../components/Booking/BookingBar'
 import BookingForm from '../../components/Booking/BookingForm'
+import BookingAvailability from '../../components/Booking/BookingAvailability'
+import BookingRooms from '../../components/Booking/BookingRooms'
 
 function BookingSteps() {
     const steps = [
@@ -55,7 +57,7 @@ function Booking() {
                     <img
                         src={bkgtop}
                         alt="."
-                        className="h-48 sm:h-64 md:h-auto w-full object-cover"
+                        className="h-20 sm:h-20 md:h-36 w-full object-cover"
                     />
                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#1E1E1E] to-transparent"></div>
                     <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 font-jeju text-3xl sm:text-5xl text-white">
@@ -65,16 +67,29 @@ function Booking() {
                 {/* Booking card */}
                 <div className='bg-[#D0E4FF] py-8 px-4'>
                     <BookingBar />
+                    <BookingAvailability />
                 </div>
                 {/* Booking form */}
                 <div className='bg-white h-[1400px] md:h-[900px]'>
                     {/* Your booking form content goes here */}
-                    <BookingSteps />
+                    {/* <BookingSteps /> */}
                     <div className="bg-white py-8">
                         <div className="container mx-auto px-6">
                             <div className="flex flex-col md:flex-row gap-8">
                                 <div className="w-full md:w-[60%] order-2 md:order-1">
-                                    <BookingForm />
+                                    {/* <BookingForm /> */}
+                                    <BookingRooms
+                                        roomData={{
+                                            image: "https://placehold.co/200x400",
+                                            title: "Deluxe Room",
+                                            details: "A luxurious room with all modern amenities.",
+                                            amenities: ["Free Wi-Fi", "Air Conditioning", "Room Service"],
+                                            price: 5000,
+                                            maxAdults: 2,
+                                            maxChildren: 2,
+                                            maxPerRoom: 4,
+                                        }}
+                                    />
                                 </div>
                                 <div className="w-full md:w-1/3 order-1 md:order-2">
                                     <BookingPage />
