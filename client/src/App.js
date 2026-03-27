@@ -14,6 +14,7 @@ import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
 import { ToastContainer } from 'react-toastify';
 import AdminSignup from './pages/Auth/AdminSignup';
+import BookingManagementSystem from './components/admindashboard/BookingManagementSystem';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/admindashboard" element={<AdminDashboard />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/booking' element={<Booking />} />
+        <Route path='/booking-management' element={<BookingManagementSystem />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/signup/admin' element={<AdminSignup />} />
