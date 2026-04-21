@@ -46,28 +46,36 @@ function Contact() {
     // Sample FAQ data - replace with your actual data
     const faqs = [
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "How do I make a booking at Xanadu Resort?",
+            answer: "You can easily make a booking through our website by selecting your preferred dates, room type, and number of guests. Fill in the booking form with your details and proceed to payment. You'll receive a confirmation email with your booking details and booking reference number."
         },
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "What is the cancellation policy?",
+            answer: "Cancellations made 7 days before the check-in date are eligible for a full refund. Cancellations made within 7 days of check-in will be subject to a 50% deduction. No refunds will be provided for cancellations made less than 24 hours before check-in."
         },
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "What amenities are included in the room?",
+            answer: "All our rooms come equipped with air conditioning, comfortable bedding, an en-suite bathroom, complimentary Wi-Fi, a flat-screen TV, and daily housekeeping services. Premium rooms also include a mini-bar, bathrobe, and toiletries from our premium collection."
         },
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "Is there a restaurant at the resort?",
+            answer: "Yes, Xanadu Resort features an on-site restaurant 'Xanadu's Kitchen' that serves a variety of cuisines including local and international dishes. We also offer room service, coffee shop, and a poolside bar. Special dietary requirements can be accommodated with prior notice."
         },
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "What activities and entertainment options are available?",
+            answer: "We offer a wide range of activities including swimming, heritage tours, water sports, yoga classes, and special activities throughout the year. Entertainment options include live performances, gaming zones, and organized excursions to nearby attractions."
         },
         {
-            question: "Lorem ipsum dolor sit amet?",
-            answer: "Nullam tristique ipsum nec magna laoreet, eu tristique lorem scelerisque. Integer vel quam a elit convallis commodo. Vivamus auctor magna eget odio dictum euismod."
+            question: "What is the check-in and check-out time?",
+            answer: "Standard check-in time is 2:00 PM and check-out time is 11:00 AM. Early check-in and late check-out are subject to availability and may incur additional charges. We recommend contacting us in advance to arrange these services."
+        },
+        {
+            question: "Is there parking available at the resort?",
+            answer: "Yes, we provide complimentary parking for all our guests. We have both covered and open parking spaces available. Valet parking service is also available upon request for a small additional fee."
+        },
+        {
+            question: "Do you offer student accommodation packages?",
+            answer: "Yes, we offer special student room packages with discounted rates and flexible booking options. These rooms are designed for student groups and come with conference facilities. Please contact us for group booking inquiries and special rates."
         },
     ];
 
@@ -103,7 +111,7 @@ function Contact() {
                                 {/* Location */}
                                 <div className="flex items-center gap-2">
                                     <CiLocationOn className="text-2xl text-[#044AB3]" />
-                                    <h1 className="text-md font-jeju font-bold">Xanadu, ABC City, XYZ Country</h1>
+                                    <h1 className="text-md font-jeju font-bold">Xanadu Resort, Kumrat Valley, Khyber Pakhtunkhwa</h1>
                                 </div>
 
                                 {/* Phone */}

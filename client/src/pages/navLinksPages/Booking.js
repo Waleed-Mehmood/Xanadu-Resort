@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Common/navbar'
+import room from '../../assets/camps.png'
 import bkgtop from '../../assets/bookingbg.png'
 import Footer from '../../components/Footer'
 import BookingPage from '../../components/Booking/BookingPage'
@@ -80,7 +81,7 @@ function Booking() {
                                     {/* <BookingForm /> */}
                                     <BookingRooms
                                         roomData={{
-                                            image: "https://placehold.co/200x400",
+                                            image: room,
                                             title: "Deluxe Room",
                                             details: "A luxurious room with all modern amenities.",
                                             amenities: ["Free Wi-Fi", "Air Conditioning", "Room Service"],

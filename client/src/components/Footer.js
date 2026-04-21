@@ -28,7 +28,7 @@ function Footer() {
             <div className='space-y-3'>
               <p className='text-[#333] text-left font-serif text-sm'>
                 <span className='font-semibold'>Address:</span><br />
-                Xanadu, ABC City, XYZ Country
+                Xanadu Resort, Kumrat Valley, Khyber Pakhtunkhwa, Pakistan
               </p>
               <p className='text-[#333] text-left font-serif text-sm flex items-center gap-2'>
                 <FaEnvelope className='text-[#2564b6]' />

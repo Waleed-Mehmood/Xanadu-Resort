@@ -22,9 +22,9 @@ function Location() {
           <div className="absolute bottom-[-50px] left-0 right-0 bg-white p-6 md:p-8 shadow-md rounded-t-lg mx-4 md:mx-16 lg:mx-32">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <div>
-                <h2 className="text-xl md:text-2xl font-bold">Xanadu</h2>
+                <h2 className="text-xl md:text-2xl font-bold">Xanadu Resort</h2>
                 <p className="text-gray-600 text-sm mt-1">
-                  Xanadu, ABC City, XYZ Country
+                  Kumrat Valley, Khyber Pakhtunkhwa, Pakistan
                 </p>
               </div>
               <div className="text-left md:text-right">
