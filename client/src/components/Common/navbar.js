@@ -21,9 +21,9 @@ function Navbar() {
         <nav className="w-full bg-gray-950 bg-opacity-50 shadow-md">
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             {/* Left side - Logo */}
-            <div className="text-2xl font-light font-serif text-white">
+            <Link to="/" className="text-2xl font-light font-serif text-white hover:text-green-400">
               Xanadu Resort
-            </div>
+            </Link>
 
             {/* Right side - Links */}
             <div className="hidden md:flex space-x-6 text-white font-serif">

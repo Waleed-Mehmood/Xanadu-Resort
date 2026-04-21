@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/auth';
+const API_URL = `${process.env.REACT_APP_API_URL}/auth`;
 
 // Thunk for signup
 export const signupUser = createAsyncThunk(

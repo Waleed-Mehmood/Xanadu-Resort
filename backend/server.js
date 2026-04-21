@@ -11,8 +11,12 @@ require('dotenv').config();
 //env variables
 const PORT = process.env.PORT || 5000;
 const MongoUri = process.env.MONGO_URI;
+const ClientUrl = process.env.CLIENT_URL || 'http://localhost:3000';
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ClientUrl,
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -30,7 +34,7 @@ app.use('/admin', adminRoute);
 app.use('/user', userRoutes);
 app.use('/auth', authRoutes);
 app.get('/', (req, res) => {
-  res.send('Hello from Node.js!');
+  res.send('Xanadu Resort API is running');
 });
 
 app.listen(PORT, () => {
